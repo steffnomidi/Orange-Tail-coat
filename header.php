@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php if ( is_front_page() ) { $bodyclass = 'mainpage'; } ?>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -20,5 +19,5 @@
   <title><?php wp_title(); ?></title> <!-- install and enable plugin "seo yoast" -->
 
 	</head>
-  <body class="<?php echo $bodyclass; ?>">
+  <body>
 	<div class="wrap">

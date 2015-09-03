@@ -36,7 +36,7 @@ body.mainpage {
 
 /* styles for footer */
 .footer {
-  padding: 20px 0;
+  padding: 24px 0;
   border-top: 1px solid #c2c2c2;
 }
 .mainpage .footer {
@@ -44,21 +44,28 @@ body.mainpage {
 }
 /* social nets icons */
 .footer i {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
   display: inline-block;
   background-repeat: no-repeat;
   position: relative;
 }
 .footer i.vk { background-image: url(images/vk.png); }
 .footer i.fb { background-image: url(images/fb.png); }
-.footer i.ig { background-image: url(images/ig.png);  width: 23px;}
-.footer i.love { background-image: url(images/herz.png);
+.footer i.ig { background-image: url(images/ig.png);}
+.footer i.love { background-image: url(images/herz.png); }
+.mainpage .footer i {
+  width: 28px;
+  height: 28px;
+}
+.mainpage .footer i.vk { background-image: url(images/vk-dark.png); }
+.mainpage .footer i.fb { background-image: url(images/fb-dark.png); }
+.mainpage .footer i.ig { background-image: url(images/ig-dark.png);}
+.mainpage .footer i.love { background-image: url(images/herz-dark.png); }
+.footer i.love, .mainpage .footer i.love {
   top: 4px;
   width: 16px;
   height: 16px;
+  margin: 0;
 }
-.mainpage .footer i.vk { background-image: url(images/vk-dark.png); height: 28px; }
-.mainpage .footer i.fb { background-image: url(images/fb-dark.png); height: 28px; }
-.mainpage .footer i.ig { background-image: url(images/ig-dark.png); height: 28px; width: 23px; }
-.mainpage .footer i.love { background-image: url(images/herz-dark.png); }
