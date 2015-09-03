@@ -1,0 +1,35 @@
+/*
+Theme Name: Оранжевый фрак
+Version: 0.01 (start)
+Author: steffnomidi
+ */
+
+/* for sticked bottom footer */
+html,body {
+  height: 100%;
+}
+
+footer div, header div, section div {
+  background: rgba(0,0,0,.05);
+}
+
+body.mainpage {
+  background: #ccc;
+}
+
+/* for sticked bottom footer */
+
+.wrap {
+  height:auto !important;
+  height:100%;
+  min-height:100%;
+  position:relative;
+}
+.empty {
+  height:100px; /* равняется высоте футера */
+}
+.footer {
+  height:100px;
+  margin-top:-100px;
+  position:relative;
+}
