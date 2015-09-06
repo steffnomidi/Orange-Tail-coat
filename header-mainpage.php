@@ -27,16 +27,23 @@
       <div class="container">
 
         <!-- desctop menu -->
-        <div class="col-sm-2 col-xs-6 recall"><div class="tooltip">Перезвонить вам?</div></div>
-        <div class="col-sm-8 hidden-xs text-center">
+        <div class="col-md-2 col-xs-6 recall" data-toggle="modal" data-target="#mainForm">
+          <div class="tooltip">Перезвонить вам?</div>
+        </div>
+
+        <div class="col-md-8 hidden-sm hidden-xs text-center">
           <?php wp_nav_menu( array(
             'menu_class' => 'menu',
             'menu' => 'Главное меню',
             )
            ); ?>
         </div>
-        <div class="col-sm-2 col-xs-6 text-right"><a href="tel:+380683997606">+38 068 399 76 06</a></div>
+
+        <div class="col-md-2 col-xs-6 text-right">
+          <a href="tel:+380683997606">+38 068 399 76 06</a>
+        </div>
         <!-- /desctop menu -->
+
       </div>
     </header>
   </div>

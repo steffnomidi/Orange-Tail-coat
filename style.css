@@ -176,9 +176,16 @@ html,body {
   margin-top: 15px;
 }
 
+
+
+
+
 /* bootstrap modal middling */
 .modal {
   text-align: center;
+}
+body{
+padding-right: 0 !important;
 }
 @media screen and (min-width: 768px) {
   .modal:before {
@@ -193,14 +200,7 @@ html,body {
   text-align: left;
   vertical-align: middle;
 }
-
-/* no border modal */
-.modal-content {
-  background: #000;
-  border: none;
-  border-radius: 0;
-}
-
+/* block close Modal */
 .closeblock {
   width: 60px;
   height: 64px;
@@ -214,9 +214,30 @@ html,body {
   text-align: center;
 }
 .closeblock:hover {
-  color: inherit;
+  color: #fff;
+}
+.modal-body {
+  padding-top: 95px;
+  background: url(images/logo-modal.png) 50% 35px no-repeat;
+  text-align: center;
+}
+.modal-body p {
+  font-size: 20px;
+  color: #666666;
+}
+.modal-body form {
+  padding-top: 15px;
+}
+.modal-body form br{
+  display: none;
 }
 
+/* no border modal for videoframe*/
+#mainVideo .modal-content {
+  background: #000;
+  border: none;
+  border-radius: 0;
+}
 #mainVideo .modal-dialog {
   width: 80%;
   height: 80%;
@@ -229,12 +250,62 @@ html,body {
   right: -80px;
 }
 
+/* modal for mainForm */
+#mainForm .modal-dialog, #mainFormOk .modal-dialog  {
+  width: 370px;
+  color: #666666;
+}
+#mainForm .closeblock, #mainFormOk .closeblock  {
+  bottom: -90px;
+  right: 158px;
+}
 
+input[type=text],input[type=password], input[type=tel], textarea {
+  width: 90%;
+  height: 44px;
+  background: #eceff4;
+  border: 1px solid #cad3df;
+  padding: 10px;
+  margin: 0 auto 14px;
+  display: block;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+textarea {
+ resize: none;
+ height: 80px;
+}
+input[type=submit] {
+  width: 200px;
+  height: 45px;
+  background-color: #ff9948;
+  border-radius: 23px;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
 
+}
 
+img.ajax-loader {
+    left: 110px;
+    position: absolute;
+    bottom: 40px;
+}
 
-
-
+/* garbage collect */
+.wpcf7-not-valid {
+  border-bottom-color: #d2335c !important;
+}
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+.wpcf7-response-output {
+  font-size: 15px;
+  border-color: #ff9900 !important;
+}
 
 
 /***************************/
@@ -243,7 +314,7 @@ html,body {
 
 /* styles for footer */
 .footer {
-  padding: 24px 0;
+  padding: 20px 0;
   border-top: 1px solid #c2c2c2;
   font-size:13px;
 }
