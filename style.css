@@ -41,8 +41,34 @@ html,body {
   border-bottom: 1px solid #c2c2c2;
   height: 80px;
 }
+.header .container>div, .footer .container>div {
+  padding: 5px;
+}
 .mainpage .header {
   border-bottom-color: rgba(225,225,225,.5);
+}
+.mainpage .header .recall {
+  background: url(images/phone.png) 0 50% no-repeat;
+  height: 80px;
+  cursor: pointer;
+}
+.mainpage .header .recall .tooltip {
+  padding: 13px 9px;
+  font-size: 14px;
+  text-align: right;
+  display: block;
+  width: 155px;
+  height: 43px;
+  left: 50px;
+  top: 17px;
+  position: absolute;
+  background: url(images/tooltip-right.png) 50% 50% no-repeat;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.mainpage .header .recall:hover .tooltip {
+
+  opacity: 1;
 }
 .header .menu {
   display: block;
@@ -54,11 +80,11 @@ html,body {
   float: none;
   padding: 0;
   display: inline-block;
-  margin: 5px;
+  margin: 0 5px;
 }
-.header .menu li a {
-  padding: 20px 10px;
-  margin: 0;
+.header a {
+  padding: 20px 0 15px;
+  margin: 0 10px;
   font-weight: 400;
   display: block;
   position: relative;
