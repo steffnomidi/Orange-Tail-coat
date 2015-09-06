@@ -10,7 +10,7 @@
 						<a href=""><i class="fb"></i></a>
 						<a href=""><i class="ig"></i></a>
 					</div>
-					<div class="col-sm-4 text-right"><a href="">Made with <i class="love"></i> in Cosmos</a></div>
+					<div class="col-sm-4 text-right"><a href="http://in-cosmos.com/">Made with <i class="love"></i> in Cosmos</a></div>
 				</div>
 			</div>
 		</footer>

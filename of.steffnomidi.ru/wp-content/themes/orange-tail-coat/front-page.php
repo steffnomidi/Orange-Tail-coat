@@ -1,8 +1,8 @@
-<?php get_header(); ?>
+<?php get_header('mainpage'); ?>
 	<section>
-		<?php if( get_field('superhead') ) { ?>superhead<?php } ?>
 		<div class="container trunk">
 			<h1>Hello, world!</h1>
+			<div class="wideblock"></div>
 		</div>
 	</section>
 <?php get_footer(); ?>

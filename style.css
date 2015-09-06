@@ -2,42 +2,132 @@
 Theme Name: Оранжевый фрак
 Version: 0.01 (start)
 Author: steffnomidi
+footer div, header div, section div {
+  background: rgba(0,0,0,.05);
+}
  */
 
 /* for sticked bottom footer */
+body, body p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
 html,body {
   height: 100%;
 }
 
-footer div, header div, section div {
-  background: rgba(0,0,0,.05);
+.mainpage {
+  background-size: cover;
+  background-position: 50% 20%;
 }
 
-body.mainpage {
-  background: #ccc;
+.header a, .footer a {
+  color: #999999;
+}
+.mainpage .header a, .mainpage .footer a {
+  color: #fff;
+  text-shadow: 0 3px 2px rgba(0, 0, 0, .6);
 }
 
-/* for sticked bottom footer */
+/* styles for footer */
+.header{
+  border-bottom: 1px solid #c2c2c2;
+  height: 80px;
+}
+.mainpage .header {
+  border-bottom-color: rgba(225,225,225,.5);
+}
+.header .menu {
+  display: block;
+  padding: 0;
+  text-align: center;
+  border: 0;
+}
+.header .menu li {
+  float: none;
+  padding: 0;
+  display: inline-block;
+  margin: 5px;
+}
+.header .menu li a {
+  padding: 20px 10px;
+  margin: 0;
+  font-weight: 400;
+  display: block;
+  position: relative;
+}
+.header .menu li a:hover, .header .menu li a:focus, .header .menu li a.active {
+  text-decoration: none;
+}
+.header .menu li a:hover:after, .header .menu li a:focus:after, .header .menu li a.active:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #999999;
+}
+.mainpage .header .menu li a:hover:after, .mainpage .header .menu li a.active:after {
+  background: #fff;
+  box-shadow: 0 2px 2px  rgba(0, 0, 0, .6);
+}
 
-.wrap {
-  height:auto !important;
-  height:100%;
-  min-height:100%;
-  position:relative;
+
+
+
+
+/* universal styles */
+.wideblock {
+  position: absolute;
+  width: 100%;
+  min-height: 20px;
+  left: 0;
 }
-.empty {
-  height:100px; /* равняется высоте футера */
+
+/* styles for vertical centring */
+.middleblock {
+  position: absolute;
+  bottom: 70px;
+  top: 80px;
+  width: 100%;
+  text-align: center;
 }
-.footer {
-  height:100px;
-  margin-top:-100px;
-  position:relative;
+.child {
+    text-align: center;
+    display:-moz-inline-box;
+    display:inline-block;
+    vertical-align:middle;
+    zoom:1;
+    //display:inline;
 }
+.helper {
+    display:-moz-inline-box;
+    display:inline-block;
+    vertical-align:middle;
+    height:100%;
+    width:0px;
+    zoom:1;
+    //display:inline;
+}
+
+/* wrapper for mainpage height 300px */
+.rasp300 {
+  height: 300px;
+}
+
+
+
+
+
+
 
 /* styles for footer */
 .footer {
   padding: 24px 0;
   border-top: 1px solid #c2c2c2;
+  font-size:13px;
 }
 .mainpage .footer {
   border-top-color: rgba(225,225,225,.5);
@@ -58,6 +148,7 @@ body.mainpage {
 .mainpage .footer i {
   width: 28px;
   height: 28px;
+  margin: 0 3px;
 }
 .mainpage .footer i.vk { background-image: url(images/vk-dark.png); }
 .mainpage .footer i.fb { background-image: url(images/fb-dark.png); }
@@ -68,4 +159,30 @@ body.mainpage {
   width: 16px;
   height: 16px;
   margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* for sticked bottom footer */
+
+.wrap {
+  height:auto !important;
+  height:100%;
+  min-height:100%;
+  position:relative;
+}
+.empty {
+  height:70px; /* равняется высоте футера */
+}
+.footer {
+  height:70px;
+  margin-top:-70px;
+  position:relative;
 }

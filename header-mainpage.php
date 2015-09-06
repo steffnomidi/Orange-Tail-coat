@@ -19,5 +19,24 @@
   <title><?php wp_title(); ?></title> <!-- install and enable plugin "seo yoast" -->
 
 	</head>
-  <body class="mainpage">
-	<div class="wrap">
+  <body class="mainpage" style="background-image: url(<?php echo get_field('background')['url']; ?>);">
+	<div class="wrap" style="background: rgba(0,0,0,.3 )">
+
+  <div class="header">
+    <header>
+      <div class="container">
+
+        <!-- desctop menu -->
+        <div class="col-sm-2 col-xs-6">phone</div>
+        <div class="col-sm-8 hidden-xs text-center">
+          <?php wp_nav_menu( array(
+            'menu_class' => 'menu',
+            'menu' => 'Главное меню',
+            )
+           ); ?>
+        </div>
+        <div class="col-sm-2 col-xs-6 text-right">phone-number</div>
+        <!-- /desctop menu -->
+      </div>
+    </header>
+  </div>

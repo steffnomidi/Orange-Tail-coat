@@ -21,3 +21,22 @@
 	</head>
   <body>
 	<div class="wrap">
+
+    <div class="header">
+      <header>
+        <div class="container">
+
+          <!-- desctop menu -->
+          <div class="col-sm-2 col-xs-6">phone</div>
+          <div class="col-sm-8 hidden-xs text-center">
+            <?php wp_nav_menu( array(
+              'menu_class' => 'menu',
+              'menu' => 'Главное меню',
+              )
+             ); ?>
+          </div>
+          <div class="col-sm-2 col-xs-6 text-right">phone-number</div>
+          <!-- /desctop menu -->
+        </div>
+      </header>
+    </div>
