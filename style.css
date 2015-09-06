@@ -150,6 +150,66 @@ html,body {
   margin-top: 15px;
 }
 
+/* bootstrap modal middling */
+.modal {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* no border modal */
+.modal-content {
+  background: #000;
+  border: none;
+  border-radius: 0;
+}
+
+.closeblock {
+  width: 60px;
+  height: 64px;
+  position: absolute;
+  display: inline-block;
+  background: url(images/close-modal.png) no-repeat 50% 0;
+  cursor: pointer;
+  color: transparent;
+  font-size: 13px;
+  padding-top: 26px;
+  text-align: center;
+}
+.closeblock:hover {
+  color: inherit;
+}
+
+#mainVideo .modal-dialog {
+  width: 80%;
+  height: 80%;
+}
+#mainVideo .modal-content, #mainVideo .modal-content .videoframe {
+  width: 100%;
+  height: 100%;
+}
+#mainVideo .closeblock{
+  right: -80px;
+}
+
+
+
+
+
+
+
+
 
 /***************************/
 /******* F O O T E R *******/
