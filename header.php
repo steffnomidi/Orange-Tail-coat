@@ -27,15 +27,13 @@
         <div class="container">
 
           <!-- desctop menu -->
-          <div class="col-sm-2 col-xs-6"></div>
-          <div class="col-sm-8 hidden-xs text-center">
+          <div class="col-sm-12 hidden-xs text-center">
             <?php wp_nav_menu( array(
               'menu_class' => 'menu',
-              'menu' => 'Главное меню',
+              'menu' => 'Меню для страниц',
               )
              ); ?>
           </div>
-          <div class="col-sm-2 col-xs-6 text-right"></div>
           <!-- /desctop menu -->
         </div>
       </header>

@@ -2,6 +2,7 @@
 
 	add_theme_support('menus');
 	add_theme_support('post-thumbnails');
+	add_image_size ( 'big', 1000, 600, 1 );
 
 function thistheme_enqueue_style() {
 	wp_enqueue_style( 'bs', get_bloginfo('template_url').'/css/bootstrap.min.css', false );
@@ -14,8 +15,11 @@ function thistheme_enqueue_script() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bs', get_bloginfo('template_url').'/js/bootstrap.min.js', array('jquery'), false );
 	wp_enqueue_script( 'owl', get_bloginfo('template_url').'/js/owl.carousel.min.js', array('jquery'), false );
-	wp_enqueue_script( 'core', get_bloginfo('template_url').'/js/script.js', array('jquery', 'owl', 'bs'), false );
+	wp_enqueue_script( 'maskphone', get_bloginfo('template_url').'/js/jquery.maskedinput.min.js', array('jquery'), false );
+	wp_enqueue_script( 'isotope', get_bloginfo('template_url').'/js/isotope.pkgd.min.js', array('jquery'), false );
+	wp_enqueue_script( 'packery', get_bloginfo('template_url').'/js/packery-mode.pkgd.min.js', array('jquery'), false );
 
+	wp_enqueue_script( 'core', get_bloginfo('template_url').'/js/script.js', array('jquery', 'owl', 'bs'), false );
 }
 
 add_action( 'wp_enqueue_scripts', 'thistheme_enqueue_style' );
@@ -98,3 +102,11 @@ add_filter('wpcf7_ajax_loader', 'my_wpcf7_ajax_loader');
 function my_wpcf7_ajax_loader () {
 	return  get_bloginfo('stylesheet_directory') . '/images/ajax-loader.gif';
 }
+
+/* rename Posts to Blog in Menu*/
+function revcon_change_post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Блог';
+}
+add_action( 'admin_menu', 'revcon_change_post_label' );
