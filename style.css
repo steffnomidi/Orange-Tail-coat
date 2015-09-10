@@ -544,6 +544,25 @@ a.fullanchor {
   margin: 20px -10%;
   height: 100%;
 }
+.trunk.feast img.alignleft, .trunk.feast img.alignright {
+  width: 58%;
+  height: 100%;
+  float: left;
+  position: relative;
+  margin: 5% 0;
+  clear: none;
+}
+.trunk.feast img.alignleft{
+  left: -10%;
+  float: left;
+  margin-right: -5%;
+}
+.trunk.feast img.alignright{
+  right: -10%;
+  float: right;
+  margin-left: -5%;
+
+}
 
 /* the trunk responsive */
 @media (max-width: 1199px) {
