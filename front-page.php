@@ -7,8 +7,8 @@
 			<div class="">
 
 				<div class="mainlogo"></div>
-				<p>Организуем яркие праздники для ярких личностей!</p>
-				<button class="playbutton" data-toggle="modal" data-target="#mainVideo">смотреть видео</button>
+				<p><?php the_field('slogan'); ?></p>
+				<button class="playbutton" data-toggle="modal" data-target="#mainVideo"></button>
 
 			</div>
 		</section>
@@ -26,7 +26,7 @@
 			<div class="closeblock" data-dismiss="modal">Закрыть</div>
 
       <div class="modal-body videoframe">
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/y95PhuJoj9I" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/<?php echo get_field('video_id'); ?>" frameborder="0" allowfullscreen></iframe>
       </div>
 
     </div>

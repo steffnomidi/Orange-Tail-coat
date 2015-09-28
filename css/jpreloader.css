@@ -1,0 +1,16 @@
+#jpreOverlay {
+	background-color: #fff;
+}
+#jpreSlide ,
+#jprePercentage  {display: none;}
+#jpreLoader{
+	width: 537px;
+	height: 293px;
+  position: absolute;
+  margin: auto;
+  background: url(../images/preloader-mute.png) no-repeat;
+}
+#jpreBar {
+  transition: width .3s;
+	background: url(../images/preloader.png) no-repeat;
+}
